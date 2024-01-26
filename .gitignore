@@ -3,6 +3,13 @@ node_modules/
 npm-debug.log
 yarn-error.log
 
+# node js
+/whatsapp-api/node_modules
+/whatsapp-api/.wwebjs_auth/*
+/whatsapp-api/.wwebjs_auth/session/*
+/whatsapp-api/.wwebjs_auth/session/Default/*
+/whatsapp-api/.wwebjs_cache/*
+
 # Laravel 4 specific
 bootstrap/compiled.php
 app/storage/

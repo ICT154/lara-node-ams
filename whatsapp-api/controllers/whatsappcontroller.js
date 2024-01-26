@@ -22,13 +22,23 @@ client.on('message', msg => {
 
 client.initialize();
 
-const api = async (req, res) => {
+const kirimpesan = async (req, res) => {
     try {
-        const { to, message } = req.body;
+        // const { to, message } = req.query.body;
+        const to = req.body.to || req.query.to;
+        const message = req.body.message || req.query.message;
+        if (!to) {
+            return res.json({
+                status: 'error',
+                message: 'missing or empty "to" field'
+            });
+        }
+
         const number = to.replace(/-/g, '');
         const phone = `${number}@c.us`;
         const msg = message;
-
+        console.log(phone);
+        console.log(msg);
 
         /////// cek jika nomer terdaftar di whatsapp
         const isRegistered = await client.isRegisteredUser(phone);
@@ -76,6 +86,6 @@ const sendMassage = async (req, res) => {
 };
 
 module.exports = {
-    api,
+    kirimpesan,
     sendMassage
 };
