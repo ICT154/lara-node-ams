@@ -37,9 +37,13 @@ const kirimpesan = async (req, res) => {
         const number = to.replace(/-/g, '');
         const phone = `${number}@c.us`;
         const msg = message;
-        console.log(phone);
-        console.log(msg);
 
+        if (!msg) {
+            return res.json({
+                status: 'error',
+                message: 'missing or empty "message" field'
+            });
+        }
         /////// cek jika nomer terdaftar di whatsapp
         const isRegistered = await client.isRegisteredUser(phone);
         if (isRegistered) {
