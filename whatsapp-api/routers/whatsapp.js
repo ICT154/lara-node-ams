@@ -14,6 +14,7 @@ const whatsappController = require('../controllers/whatsappcontroller');
 // use controller
 router.get('/whatsappapi', whatsappController.sendMassage);
 router.post('/kirimpesan', whatsappController.kirimpesan);
+router.post('/sendgambar', whatsappController.kirimpesangambar);
 // router.get('/whatsappapi', whatsappController.index);
 
 router.get('/', (req, res) => {
