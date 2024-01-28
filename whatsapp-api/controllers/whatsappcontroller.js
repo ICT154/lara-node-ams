@@ -22,13 +22,12 @@ client.on('message', msg => {
 
 client.on('message', async (msg) => {
     if (msg.body === '!jadistiker') {
-        try {
+        if (msg.hasMedia) {
             const media = msg.downloadMedia();
             const sticker = new MessageMedia('image/png', media.data, media.mimetype);
-            const chat = msg.getChat();
+            // const chat = msg.getChat();
+            // chat.sendMessage(sticker, { sendMediaAsSticker: true });
             msg.reply(sticker, { sendMediaAsSticker: true });
-        } catch (error) {
-            console.log(error);
         }
     }
 });

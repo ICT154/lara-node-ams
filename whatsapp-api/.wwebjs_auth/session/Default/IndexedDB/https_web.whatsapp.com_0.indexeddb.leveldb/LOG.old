@@ -1,3 +1,16 @@
-2024/01/27-01:34:12.414 2598 Reusing MANIFEST c:\laragon\www\laravel-8\whatsapp-api\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/01/27-01:34:12.414 2598 Recovering log #479
-2024/01/27-01:34:12.561 2598 Reusing old log c:\laragon\www\laravel-8\whatsapp-api\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000479.log 
+2024/01/28-22:07:33.027 848 Reusing MANIFEST c:\laragon\www\laravel-8\whatsapp-api\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/01/28-22:07:33.059 848 Recovering log #635
+2024/01/28-22:07:33.808 848 Reusing old log c:\laragon\www\laravel-8\whatsapp-api\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000635.log 
+2024/01/28-22:09:38.433 d8c Level-0 table #642: started
+2024/01/28-22:09:38.931 d8c Level-0 table #642: 1450705 bytes OK
+2024/01/28-22:09:38.940 d8c Delete type=0 #635
+2024/01/28-22:09:40.383 d8c Compacting 1@1 + 3@2 files
+2024/01/28-22:09:42.517 d8c Generated table #643@1: 60606 keys, 2280385 bytes
+2024/01/28-22:09:43.434 d8c Generated table #644@1: 18470 keys, 2176159 bytes
+2024/01/28-22:09:44.015 d8c Generated table #645@1: 36041 keys, 709781 bytes
+2024/01/28-22:09:44.015 d8c Compacted 1@1 + 3@2 files => 5166325 bytes
+2024/01/28-22:09:44.021 d8c compacted to: files[ 0 0 3 0 0 0 0 ]
+2024/01/28-22:09:44.024 d8c Delete type=2 #637
+2024/01/28-22:09:44.024 d8c Delete type=2 #638
+2024/01/28-22:09:44.024 d8c Delete type=2 #639
+2024/01/28-22:09:44.024 d8c Delete type=2 #642
